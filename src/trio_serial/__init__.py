@@ -32,3 +32,5 @@ if os.name == "posix":
         from .posix import PosixSerialStream as SerialStream
 else:
     raise ImportError(f"Platform {os.name!r} not supported.")
+
+__all__ = ["SerialStream", "Parity", "StopBits"]
